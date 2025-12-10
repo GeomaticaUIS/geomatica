@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.container {
+    padding: 20px 20px;
+}
+
+.card {
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card-title {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #007bff;
+}
+
+.card-text {
+    margin: 5px 0;
+}
+
+.project-details {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.project-details h6 {
+    font-weight: bold;
+    color: #007bff;
+    margin-top: 0;
+    font-size: 1em;
+}
+
+iframe {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: 620px;
+}
+
+.img-responsive {
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
+}

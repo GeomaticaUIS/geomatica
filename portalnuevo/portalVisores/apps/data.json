@@ -1,0 +1,54 @@
+{
+    "apps_path": "apps/",
+    "indicador_path": "indicador/",
+    "logout_path": "",
+    "menu": ["Universidad Industrial de Santander", "Área Metropolitana Bucaramanga", "Aguazul"],
+    "submenu": ["Norte",
+        "SIGAMB",
+        "Indicadores del AMB",
+        "Aguazul"
+    ],
+    "types": ["visor", "indicador"],
+    "type_target": {
+        "portal": "_blank",
+        "visor": "_blank",
+        "indicador": "_blank",
+        "app": "_blank"
+    },
+    "type_icon": {
+        "portal": "map",
+        "visor": "map",
+        "indicador": "pie chart",
+        "app": "map"
+    },
+
+    "apps": [
+        {
+            "id": 1,
+            "type": "visor",
+            "name": "SIGAMB",
+            "tags": "Área Metropolitana Bucaramanga",
+            "description": "",
+            "url": "https://visor.amb.gov.co/visor",
+            "image": "images/visor.png"
+        },
+        {
+            "id": 11,
+            "type": "indicador",
+            "name": "INDICADORES AMB",
+            "description": "",
+            "tags": "Área Metropolitana Bucaramanga",
+            "url": "https://apps.amb.gov.co/indicadores",
+            "image": "images/Indicadores.png"
+        },
+        {
+            "id": 22,
+            "type": "visor",
+            "name": "AGUAZUL",
+            "tags": "Aguazul",
+            "description": "",
+            "url": "https://mapasaguazul.gov.co/visor",
+            "image": "images/visoraguazul.png"
+        }
+    ]
+}

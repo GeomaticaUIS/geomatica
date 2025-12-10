@@ -1,0 +1,52 @@
+{
+  "apps": [
+    { "id": 1,
+      "type": "portal",
+      "name": "Pagina Institucional",
+      "tags": "Área Metropolitana",
+      "description": "",
+      "url": "http://www.amb.gov.co",
+      "image": "images/portal_amb.png"
+    },
+    { "id": 2,
+      "type": "portal",
+      "name": "Observatorio Metropolitano",
+      "tags": "Observatorio",
+      "description": "",
+      "url": "http://www.observatoriometropolitano.com.co/",
+      "image": "images/portal_observa.png"
+    },
+    { "id": 10,
+      "type": "visor",
+      "name": "Visor Metropolitano",
+      "tags": "Área Metropolitana",
+      "description": "Visor de Información Geográfica",
+      "url": "https://visor.amb.gov.co",
+      "image": "images/visor_amb.png"
+    },
+    { "id": 11,
+      "type": "visor",
+      "name": "Opendata",
+      "description": "",
+      "tags": "Área Metropolitana",
+      "url": "http://www.observatoriometropolitano.com.co/opendata/",
+      "image": "images/visor_opendata.png"
+    },
+    { "id": 20,
+      "type": "indicador",
+      "name": "Residuos Peligrosos",
+      "description": "Residuos Peligrosos, Generadores y Gestores",
+      "tags": "Ambiental, RESPEL",
+      "url": "https://apps.amb.gov.co/indicadores?indicador=ResiduosPeligrosos",
+      "image": "images/tablero_respel.png"
+    },
+    { "id": 50,
+      "type": "app",
+      "name": "Gestion del Riesgo",
+      "tags": "Ambiental",
+      "description": "Gestion del Riesgo",
+      "url": "https://apps.amb.gov.co/GestionRiesgo/",
+      "image": "images/app_sigger.png"
+    }
+  ]
+}

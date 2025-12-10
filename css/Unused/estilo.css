@@ -1,0 +1,252 @@
+ /* Cambiar el tipo de fuente para el h2 */
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    color: #666;
+    background-color: #fff;
+}
+ 
+h1, h2, h3,   h5 {
+    font-family: "Arial", sans-serif; /* Cambia la fuente a Arial o la que prefieras */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente */
+    color: #000000;
+    font-size: 32px; 
+}
+
+h4,h6 {
+    font-family: "Arial", sans-serif; /* Cambia la fuente a Arial o la que prefieras */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente */
+    color: #000000;
+    font-size: 16px; 
+ }
+
+/* Estilos adicionales para el h2 */
+h2 {
+    color: #000000; /* Cambia el color del texto */
+    margin-bottom: 10px; /* Añade un margen inferior para separación */ 
+    text-align: center;
+}
+
+.fondo-servicios {
+    background-image: url('../images/about-bg.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    padding: 20px; /* Agrega espacio de relleno para separación */
+    color: white; /* Cambia el color del texto para que sea legible en la imagen */ 
+}
+
+.fondo-servicios h2 { 
+    font-size: 44px; /* Cambia el tamaño de la fuente */
+    color: #fdfdfd; /* Cambia el color del texto */
+    margin-bottom: 20px; /* Añade un margen inferior para separación */ 
+    text-align: center;
+    font-family: "Arial", sans-serif; /* Cambia la fuente a Arial o la que prefieras */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente */
+}
+
+/* Estilo para el fondo del section */
+.fondo-section {
+    background-image: url('../images/contact-bg.jpg'); /* Ruta de la imagen */
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir el fondo */
+    background-position: center; /* Centra la imagen en el fondo */
+    padding: 20px; /* Agrega espacio de relleno para separación */
+    color: white; /* Cambia el color del texto para que sea legible en la imagen */    
+}
+
+
+.fondo-section h2 { 
+    font-size: 44px; /* Cambia el tamaño de la fuente */
+    color: #fdfdfd; /* Cambia el color del texto */
+    margin-bottom: 20px; /* Añade un margen inferior para separación */ 
+    text-align: center;
+    font-family: "Arial", sans-serif; /* Cambia la fuente a Arial o la que prefieras */
+    font-weight: bold; /* Puedes ajustar el peso de la fuente */
+}
+
+/* Aplicar negrita a los elementos <li> */
+ul.nav-mobile li {
+    font-weight: bold;
+}
+
+/* Aumentar el tamaño del icono */
+.icono-grande {
+  font-size: 48px; /* Cambia el tamaño a tu preferencia */
+}
+
+.service-icon {
+    border-radius: 4px;
+    text-align: center;
+    background-color: #3D7A99;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 48px;
+    height: 90px;
+    line-height: 90px;
+    width: 90px;  
+    -webkit-transition: background-color 0.2s ease;
+    transition: background-color 0.2s ease;
+}
+
+.service-info h3 {
+  margin-top: 35px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: -10px;
+}
+ 
+
+/* Estilo para el nav fijo */
+nav.fijo {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3D7A99; /* Cambia el color de fondo a tu preferencia */
+    z-index: 1000;
+}
+  
+/* Espacio de relleno para evitar superposiciones */
+body {
+  padding-top: 60px; /* Ajusta según la altura del nav */
+}
+ 
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/*estilo portfolio*/
+
+#portfolio .container-fluid, 
+#portfolio .col-sm-3  {
+  overflow: hidden;
+  padding: 0;
+}
+
+#portfolio .folio-item {
+  position: relative;
+}
+
+#portfolio .overlay {
+  background-color: #000;
+  color: #fff; 
+  left: 0;
+  right:0;
+  bottom:-100%;
+  height: 0;
+  position: absolute;
+  text-align: center;
+  opacity:0;  
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.overlay .overlay-content {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay .overlay-text {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.overlay .folio-info {
+  opacity: 0;
+  margin-bottom: 75px;
+  margin-top: -75px;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.overlay .folio-info h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.folio-overview a {
+  font-size: 18px;
+  color: #333;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: inline-block;
+  margin-top: 20px;
+  margin-right: 5px;
+}
+
+.folio-overview a:hover {
+  color: #fff;
+}
+
+.folio-overview .folio-expand {
+  margin-top: -500px;
+  margin-left: -500px;
+}
+
+.folio-image, .folio-overview .folio-expand {
+  -webkit-transition: all 0.8s ease-in-out;
+  transition: all 0.8s ease-in-out;
+}
+
+#portfolio .folio-item:hover .folio-image {
+  -webkit-transform: scale(1.5) rotate(-15deg);
+  transform: scale(1.5) rotate(-15deg);
+}
+
+.folio-image img {
+  width: 100%;
+}
+
+#portfolio .folio-item:hover .overlay {
+  opacity: 0.8;
+  bottom: 0;
+  height: 100%;
+}
+
+#portfolio .folio-item:hover .folio-overview .folio-expand {
+  margin-top: 0;
+  margin-left:0;
+}
+
+#portfolio .folio-item:hover .overlay .folio-info {
+  opacity: 1;  
+  margin-bottom:0;
+  margin-top:0;
+}
+
+
+#single-portfolio {
+  padding: 90px 0;
+  background: #f5f5f5;
+  position: relative;
+}
+
+#single-portfolio img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+#single-portfolio .close-folio-item {
+  position: absolute;
+  top: 30px;
+  font-size: 34px;
+  width: 34px;
+  height: 34px;
+  left: 50%;
+  color: #999;
+  margin-left: -17px;
+}

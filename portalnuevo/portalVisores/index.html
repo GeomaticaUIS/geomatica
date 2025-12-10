@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Standard Meta -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+
+  <!-- Site Properties -->
+  <title>Portal de Aplicaciones - Geomatica</title>
+  <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+  <link rel="stylesheet" type="text/css" href="libs/node_modules/semantic-ui-css/semantic.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/portal.css">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+   <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+  <!-- Custom styles for this template -->
+  <link href="css/full-slider.css" rel="stylesheet">
+  <!-- Start WOWSlider.com HEAD section -->
+
+<!-- End WOWSlider.com HEAD section -->
+
+<script>
+
+$(document).ready(function(e){
+  $("#cargando").load('./wowslider1.html',function(data){
+    $(this).html(data);
+  });
+})
+
+
+
+</script>
+
+<style>
+#cargando{
+  width: 100%;
+}
+
+
+</style>
+
+</head>
+
+<body>
+
+<!-- Page Contents -->
+<div id="portal-main">
+
+  <div class="ui vertical  center aligned segment" style="padding-top: 0px;">
+
+    <!-- Start WOWSlider.com BODY section -->
+
+    <div id="cargando">
+
+    </div>
+
+
+<!--
+    <header>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+
+          <div class="carousel-item active" style="background-image: url('assets/images/10.JPG')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>First Slide</h3>
+              <p>This is a description for the first slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('assets/images/uis.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Second Slide</h3>
+              <p>This is a description for the second slide.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item" style="background-image: url('assets/images/7.jpg')">
+            <div class="carousel-caption d-none d-md-block">
+              <h3>Third Slide</h3>
+              <p>This is a description for the third slide.</p>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </header>
+-->
+
+  </div>
+
+  <div class="ui fluid vertical menu">
+    <a v-bind:href="item.url" target="_blank" class="item" v-for="item in menu" v-on:click="terms = item">
+      {{item}}
+    </a>
+    <div class="item">
+      <div class="ui icon input">
+        <input type="text"  placeholder="Buscar..." v-model="terms">
+        <i class="search link icon"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui secondary menu overlay">
+    <div class="ui container">
+      <a class="item" v-for="item in menu" v-on:click="terms = item">
+        {{item}}
+      </a>
+      <div class="right menu">
+        <div class="item">
+          <div class="ui icon input">
+            <input type="text" placeholder="Buscar..." v-model="terms">
+            <i class="search link icon"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="ui vertical stripe segment content">
+    <div class="ui middle aligned stackable grid container">
+
+      <div class="ui cards">
+        <div class="ui raised link card" v-for="app in appsSearch" v-bind:key="app.id">
+          <a class="image" v-bind:href="app.url" target="_blank">
+            <img v-bind:src="apps_path + app.image" style="height: 171px;">
+          </a>
+          <div class="content">
+            <a class="header" v-bind:href="app.url" target="_blank">{{app.name}}</a>
+            <div class="meta">
+              <span class="meta">{{app.tags}} - {{app.type | capitalize}}</span>
+            </div>
+            <div class="description">{{app.description}}</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="ui vertical footer segment">
+    <div class="ui container">
+      <div class="ui stackable  divided equal height stackable grid">
+        <div class="three wide column">
+          <h4 class="ui  header">Menú</h4>
+          <div class="ui  link list">
+            <a class="item" v-for="item in menu" v-on:click="terms = item">{{item}}</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui  header">Tipos de Aplicaciones</h4>
+          <div class="ui  link list">
+            <a class="item" v-for="type in types" v-on:click="terms = type">{{type | capitalize}}</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui  header">Portal de visores - Geomatica</h4>
+          <p>Encuentre aquí todos los visores de Geomatica.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+
+<script src="libs/node_modules/jquery/dist/jquery.js"></script>
+<script src="libs/node_modules/semantic-ui-css/semantic.js"></script>
+<script src="libs/node_modules/vue/dist/vue.js"></script>
+<script src="libs/node_modules/axios/dist/axios.js"></script>
+<!--<script src="vendor/jquery/jquery.min.js"></script>-->
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/portal.js"></script>
+<script src="assets/js/portal-apps.js"></script>
+</html>

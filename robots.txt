@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /quienes_somos.html
+Disallow: /servicios.html
+Disallow: /proyectos.html

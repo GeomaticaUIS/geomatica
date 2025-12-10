@@ -1,0 +1,11 @@
+{
+  "apps_path": "apps/",
+  "menu": ["Geomática"],
+  "types": ["portal", "visor", "indicador", "app"],
+  "type_icon": {
+    "portal": "newspaper",
+    "visor": "map",
+    "indicador": "pie chart",
+    "app": "cube"
+  }
+}
