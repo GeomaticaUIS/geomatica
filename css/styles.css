@@ -316,3 +316,16 @@ hr {
     object-position: center; /* Centra la imagen */
     aspect-ratio: auto;
 }
+
+.ally-card {
+    transition: transform 0.2s, box-shadow 0.2s;
+    background-color: #f8f9fa;
+    border-radius: 12px !important;
+    cursor: default;
+}
+
+.ally-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12) !important;
+    background-color: #ffffff;
+}
