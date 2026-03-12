@@ -1,1179 +1,859 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Geomática UIS</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css">
-    <link rel="shortcut icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="css/styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Geomática UIS — Gestión y Optimización de Sistemas</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+<link rel="shortcut icon" href="images/favicon.ico">
+<link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
-    <!-- Navbar -->
-    <section>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
-            <div class="container">
-                <!-- Título o Logo -->
-                <img src="images/logo.png" alt="Geomática" style="width:150px; height:auto;">
-                <!-- Botón toggle para dispositivos móviles -->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-
-                <!-- Contenido del Navbar -->
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                <li class="nav-item"><a class="nav-link" href="#semillero">Semillero</a></li>
-                <li class="nav-item"><a class="nav-link" href="#geomatica-LinInv">Investigación</a></li>
-                <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
-                <li class="nav-item"><a class="nav-link" href="#integrantes">Integrantes</a></li>
-                <li class="nav-item"><a class="nav-link" href="#posgrados">Posgrados</a></li>
-                <li class="nav-item"><a class="nav-link" href="#consultorias">Consultorías</a></li>
-                <li class="nav-item"><a class="nav-link" 
-                        href="https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000003022" 
-                            target="_blank">GrupLac</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-    </section>
-
-    <!-- Carrusel servicios -->
-    <section>
-        <div class="swiper">
-            <div class="swiper-wrapper">
-                <!-- Primera diapositiva -->
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072644-1.jpg"
-                            alt="Imagen 1">
-                    </div>
-                </div>
-                <!-- Segunda diapositiva -->
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072656-3.jpg"
-                            alt="Imagen 2">
-                    </div>
-                </div>
-                <!-- Tercera diapositiva -->
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072651-2.jpg"
-                            alt="Imagen 3">
-                    </div>
-                </div>
-                <!-- Cuarta diapositiva -->
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250219143422-uis.jpg"
-                            alt="Imagen 4">
-                    </div>
-                </div>
-                <!-- Quinta diapositiva -->
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://icgaroa.com/wp-content/uploads/2022/04/otros_03.jpg" alt="Imagen 5">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250224094451-08032024_074538.jpg"
-                            alt="Imagen 6">
-                    </div>
-                </div>
-
-                <div class="swiper-slide">
-                    <div class="image-container">
-                        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20251204153501-img_7056.jpeg"
-                            alt="Imagen 7">
-                    </div>
-                </div>
-
-            </div>
-            <!-- Botones de navegación -->
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-        </div>
-    </section>
-    <!-- Sección Informativa -->
-    <section id="geomatica-info">
-        <div class="container">
-            <!-- Título -->
-            <h2 class="section-title text-center mb-4">Geomática, Gestión y Optimización de Sistemas</h2>
-            <!-- Descripción -->
-            <p class="description text-justify">
-                Con el ánimo de dar soluciones concretas a problemas específicos de los diferentes sectores de la
-                sociedad colombiana, nace el grupo GEOMÁTICA. Un grupo de investigación y desarrollo que da inicio a sus
-                labores en mayo de 1998. Grupo que a lo largo de estos años ha logrado consolidar su labor, a través del
-                uso de herramientas apoyadas en los sistemas de información geográfica, así como en proyectos enfocados
-                en la generación de planes de ordenamiento territorial, planes de infraestructura vial, estudios de
-                ordenamiento y manejo de cuencas hidrográficas, diseño de sistemas de transporte masivo, planes de
-                movilidad urbana de los municipios del área metropolitana de Bucaramanga, diseño de soluciones viales en
-                los principales sectores críticos de movilidad del Municipio de Bucaramanga y del Municipio de
-                Barrancabermeja, diseños de proyectos de transformación del espacio público del área urbana del
-                Municipio de Barrancabermeja, entre otros proyectos de gran impacto para la región.
-            </p>
-        </div>
-        <hr>
-    </section>
-
-    <!-- Sección PDF -->
-    <section id="geomatica-pdf" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Maestría en Ingeniería de Transporte y Logística</h2>
-            <div class="d-flex justify-content-center">
-                <iframe src="https://drive.google.com/file/d/1NHes4dSd1Q4CaV7Ma3U1tnipqfZiFeQ1/preview#view=FitH"
-                    style="width: 100%; height: 60vh; border: none;">
-                </iframe>
-            </div>
-            <div class="text-center mt-4">
-                <p class="description mb-3 text-center">
-                    ¿Te interesa esta maestría? Completa el formulario de pre-registro y recibe información detallada
-                    sobre el programa, requisitos y proceso de admisión.
-                </p>
-
-                <a href="https://forms.gle/Au4uGYSHLtNwfak4A" target="_blank" class="btn btn-primary btn-lg">
-                    Pre-registro Maestría en Ingeniería de Transporte y Logística (UIS)
-                </a>
-            </div>
-        </div>
-    </section>
-
-     <!-- video de maestría en transporte pero paila no listado no deja
-    <iframe width="1236" height="695" src="https://www.youtube.com/embed/eMBzv6TwxvQ" title="Maestría en Ingeniería de Transporte y Logística" 
-    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    -->
-    <!-- Sección panorámica -->
-    <section id="panoramica" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Panorámica 360 represa Hidrosogamoso</h2>
-            <div style="max-width:1200px; margin:auto; background:white; padding:10px;">
-                <iframe 
-                  width="100%" 
-                  height="720px"
-                  frameborder="0" 
-                  allowfullscreen
-                  src="https://momento360.com/e/u/22a6296dc9f5471dad1657b15f3fdb77?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true">
-                </iframe>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección semillero -->
-    <section id="semillero" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Semillero SURE</h2>
-            <div class="row g-4 align-items-start">
-                <div class="col-lg-5">
-                    <div class="border" style="background: #fff; padding: 8px;">
-                        <iframe src="https://drive.google.com/file/d/17RxxZHSH9dmceEdzcBEHncdymHonhYSu/preview#view=FitH"
-                            style="width: 100%; height: 640px; border: none;" allow="autoplay">
-                        </iframe>
-                    </div>
-                </div>
-
-                <div class="col-lg-7">
-                    <h2 class="section-title text-start mb-3">Ciclo de charlas: Ingeniería e Investigación con
-                        Propósito (2025)</h2>
-                    <hr class="mt-0 mb-4" style="width: 100%;">
-
-                    <p class="description mb-4" style="text-align: justify;">
-                        Esta iniciativa buscó generar un impacto positivo en la formación académica y humana del
-                        público asistente, promoviendo el acceso libre a conocimiento especializado sobre
-                        infraestructura resiliente y sostenible. Las charlas fueron ofrecidas sin costo por
-                        profesionales comprometidos con el desarrollo del país, fortalecieron el vínculo entre la
-                        universidad y la sociedad. En estas se abordaron problemáticas tangibles como el cambio
-                        climático, la innovación para el desarrollo rural y la sostenibilidad en obras civiles, entre
-                        otros. Además, se fomentó la participación activa de los estudiantes del Semillero en la
-                        organización de los eventos, lo que fortaleció habilidades como el trabajo colaborativo, la
-                        responsabilidad social y el liderazgo. Las charlas fueron dirigidas a estudiantes
-                        universitarios, a estudiantes miembros de la Comisión de Jóvenes de la Sociedad Santandereana
-                        de Ingenieros y de la Sociedad de Estudiantes de Ingeniería Civil (SEIC). La participación no
-                        tuvo costo para el público.
-                    </p>
-
-                    <p class="description mb-0" style="text-align: justify;">
-                        A la <strong>izquierda</strong> encontrarás una cartilla que resume las charlas realizadas.
-                        Además, dado que algunos de nuestros invitados se encontraban en otros países o ciudades
-                        distintas de Bucaramanga, algunas de las charlas virtuales fueron grabadas y están listas
-                        (<strong>abajo</strong>) para que las puedas ver en cualquier momento.
-                    </p>
-                </div>
-            </div>
-
-            <div class="row g-4 mt-4">
-                <div class="col-lg-4 col-md-6">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/hzbKGZlnPOs"
-                            title="Análisis de Ciclo de Vida (ACV)" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/2NRULdpHOUA"
-                            title="Análisis de Ciclo de Vida (ACV)" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="ratio ratio-16x9">
-                        <iframe src="https://www.youtube.com/embed/-7aWdUIw-Ew"
-                            title="Análisis de Ciclo de Vida (ACV)" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
-                        </iframe>
-                    </div>
-                </div>
-            </div>
-            
-        </div>
-    </section>
-
-    <!-- Sección líneas de investigación -->
-    <section id="geomatica-LinInv" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Líneas de Investigación</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center bg-white p-4 rounded shadow h-100">
-                        <img src="http://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20210629121037-5.jpg"
-                            alt="Icono 1" class="mb-3" style="width:6rem;height:6rem;object-fit:cover;">
-                        <h3 class="fs-5 fw-semibold mb-2 text-center">Ambientes construidos saludables y sostenibles</h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center bg-white p-4 rounded shadow h-100">
-                        <img src="http://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20210629121042-6.jpg"
-                            alt="Icono 2" class="mb-3" style="width:6rem;height:6rem;object-fit:cover;">
-                        <h3 class="fs-5 fw-semibold mb-2 text-center">Riesgo y Resiliencia en Ambientes Construidos</h3>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center bg-white p-4 rounded shadow h-100">
-                        <img src="http://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20210629121048-7.jpg"
-                            alt="Icono 3" class="mb-3" style="width:6rem;height:6rem;object-fit:cover;">
-                        <h3 class="fs-5 fw-semibold mb-2 text-center">Movilidad y Transporte Sostenible para el Desarrollo Regional</h3>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección de Objetivos -->
-    <section id="geomatica-NueObj" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Nuestros Objetivos</h2>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center bg-white p-4 rounded shadow h-100">
-                        <img src="http://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20210629121037-5.jpg"
-                            alt="Objetivo 1" class="mb-3" style="width:6rem;height:6rem;object-fit:cover;">
-                        <h3 class="fs-5 fw-semibold mb-2 text-center">Ambientes construidos saludables y sostenibles</h3>
-                        <p style="text-align:justify;">Contribuir al desarrollo de ambientes construidos saludables y sostenibles
-                            que promuevan la salud integral y el desarrollo humano, mediante la investigación, el diseño y
-                            la gestión de estos ambientes, con un enfoque en la innovación social. Se aborda problemas de
-                            salud pública como las enfermedades cardiovasculares y la actividad física, vectores
-                            epidemiológicos, la salud mental, el consumo de sustancias psicoactivas y demás aspectos del
-                            estilo de vida saludable con relación a la provisión y calidad de la infraestructura social. Es
-                            de interés el estudio de los efectos de los problemas socioculturales evidenciados en el
-                            comportamiento de las personas en los espacios públicos, como la seguridad y la movilidad.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center bg-white p-4 rounded shadow h-100">
-                        <img src="http://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20210629121042-6.jpg"
-                            alt="Objetivo 2" class="mb-3" style="width:6rem;height:6rem;object-fit:cover;">
-                        <h3 class="fs-5 fw-semibold mb-2 text-center">Riesgo y Resiliencia en Ambientes Construidos</h3>
-                        <p style="text-align:justify;">La investigación en resiliencia busca entender cómo las comunidades y los
-                            sistemas de infraestructura interactúan con los riesgos naturales, y cómo pueden diseñarse,
-                            planificarse y gestionarse para minimizar los impactos negativos y promover la recuperación a
-                            largo plazo. Esto implica la identificación de medidas de mitigación, el fortalecimiento de la
-                            capacidad de respuesta, la promoción de prácticas de construcción y diseño resilientes, y la
-                            consideración de aspectos sociales, económicos y ambientales en la toma de decisiones.</p>
-                    </div>
-                </div>
-                <div class="col">
-                    <div class="d-flex flex-column align-items-center bg-white p-4 rounded shadow h-100">
-                        <img src="http://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20210629121048-7.jpg"
-                            alt="Objetivo 3" class="mb-3" style="width:6rem;height:6rem;object-fit:cover;">
-                        <h3 class="fs-5 fw-semibold mb-2 text-center">Movilidad y Transporte Sostenible para el Desarrollo Regional</h3>
-                        <p style="text-align:justify;">Esta línea de investigación permitirá comprender las dinámicas de movilidad
-                            en la región y proponer soluciones más efectivas, adaptadas a la realidad local, lo que podría
-                            contribuir a la reducción de la congestión, la mejora del transporte público, la promoción de
-                            modos de movilidad sostenibles, la eficiencia energética en el transporte regional, la
-                            conectividad y el desarrollo equilibrado del territorio, desarrollar una infraestructura
-                            eficiente y resiliente.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Integrantes -->
-    <section id="integrantes" class="py-5">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Integrantes Activos</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-                <!-- Integrante 1 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U9200/20210620145810-image-min.png"
-                            alt="Hernan Porras Diaz">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Hernan Porras Diaz</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://profesores.uis.edu.co/escuela-ingenieria-civil/hernan-porras-diaz-es/"
-                                    target="_blank">Profesor UIS: Hernán Porras</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 2 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U10446/20210913204232-profe_jhon.jpg"
-                            alt="Jhon Jairo Caceres Jimenez">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Jhon Jairo Caceres Jimenez</h5>
-                            <p class="small text-muted mb-0">Director del grupo</p>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://profesores.uis.edu.co/escuela-ingenieria-civil/jhon-jairo-caceres-jimenez-es/"
-                                    target="_blank">Profesor UIS: Jhon Jairo</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 3 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U8268/20240409201157-4b.jpg"
-                            alt="Jose Miguel Benjumea Royero">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Jose Miguel Benjumea Royero</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://profesores.uis.edu.co/escuela-ingenieria-civil/jose-miguel-benjumea-royero-es/"
-                                    target="_blank">Profesor UIS: Jose Benjumea</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 4 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20260310144704-yuly.png"
-                            alt="Yuly Fernanda López Contreras">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Yuly Fernanda López Contreras</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://profesores.uis.edu.co/escuela-ingenieria-quimica/yuly-fernanda-lopez-contreras-es/"
-                                    target="_blank">Profesor UIS: Yuly Fernanda López</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 5 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://profesores.uis.edu.co/wp-content/uploads/elementor/thumbs/Gustavo-Chio-Cho-03-r9g2c5lkptwuybumx6o8v9indpbxtnusbmbob3x0ag.png"
-                            alt="Gustavo Chio Cho">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Gustavo Chio Cho</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://profesores.uis.edu.co/escuela-ingenieria-civil/gustavo-chio-cho-es/"
-                                    target="_blank">Profesor UIS: Gustavo Chio Cho</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 6 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U14767/20210623121900-foto_miller-2021f_.jpg"
-                            alt="Miller Humberto Salas Rondon">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Miller Humberto Salas Rondon</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://ingenieriacivil.uis.edu.co/MillerhumbertoSalas"
-                                    target="_blank">Profesor UIS: Miller Humberto Salas</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 7 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U8259/20210716164803-profe_yerly.jpg"
-                            alt="Yerly Fabian Martinez Estupinan">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Yerly Fabian Martinez Estupinan</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://profesores.uis.edu.co/escuela-ingenieria-civil/yerly-fabian-martinez-estupinan-es/"
-                                    target="_blank">Profesor UIS: Yerly Martinez</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 8 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U11719/20220326154017-1467646262_522853_1467646344_noticia_normal.jpg"
-                            alt="Vanessa Quiroga Arciniegas">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Vanessa Quiroga Arciniegas</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000062847"
-                                    target="_blank">scienti.minciencias.gov.co/</a></p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Integrante 9 -->
-                <div class="col">
-                    <div class="d-flex align-items-center gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U11719/20220326154017-1467646262_522853_1467646344_noticia_normal.jpg"
-                            alt="Sandy Jair Yanes Sánchez">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Sandy Jair Yanes Sánchez</h5>
-                            <p class="small text-muted mb-0">Visítelo en: <a class="text-primary"
-                                    href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000194662"
-                                    target="_blank">scienti.minciencias.gov.co/</a></p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Posgrados -->
-    <section id="posgrados" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Estudiantes de Posgrado</h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-4">
-                <!-- Posgrado 1 -->
-                <div class="col">
-                    <div class="d-flex align-items-start gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20260310142851-deicy.png"
-                            alt="Deicy Duarte Cristancho">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Deicy Duarte Cristancho</h5>
-                            <p class="small text-muted mb-1">Maestría en Ingeniería Civil</p>
-                            <p class="small text-muted mb-0" style="text-align:justify;">
-                                Soy geóloga egresada de la Universidad Industrial de Santander (2021) y Especialista en Geotecnia Ambiental de la UDES (2024). Mi proyecto de investigación, desarrollado en el marco de la Maestría en Ingeniería Civil, tiene como objetivo explorar y validar el uso de modelos emergentes para la modelación y predicción de susceptibilidad a remoción en masa.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <!-- Posgrado 2 -->
-                <div class="col">
-                    <div class="d-flex align-items-start gap-3 p-3 bg-white border rounded shadow-sm overflow-hidden h-100">
-                        <img class="rounded-circle flex-shrink-0"
-                            style="width:5rem;height:5rem;object-fit:cover;"
-                            src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20260310142817-roberto.png"
-                            alt="Roberto José Tamara Corredor">
-                        <div class="overflow-hidden">
-                            <h5 class="fs-6 fw-semibold mb-1">Roberto José Tamara Corredor</h5>
-                            <p class="small text-muted mb-1">Doctorado en Ingeniería Civil</p>
-                            <p class="small text-muted mb-0" style="text-align:justify;">Soy Ingeniero Civil de la Universidad Industrial de Santander (2025) y actualmente curso el Doctorado en Ingeniería Civil. Mi investigación se centra en el desarrollo de metodologías para la extracción automática de activos viales en vías terciarias, con especial énfasis en la región de Santander.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- servicios-exp -->
-    <section class="py-5" id="servicios">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <h3 class="text-primary">Servicios</h3>
-                    <p>Las líneas de acción que integran el quehacer de Geomática y los servicios que ofrece comprenden
-                        diversos campos de la ingeniería:
-                    </p>
-                    <ul class="list-group">
-                        <li class="list-group-item">✔ Gestión del riesgo: estudios de amenaza,
-                            vulnerabilidad y riesgo.</li>
-                        <li class="list-group-item">✔ Formulación de planes de ordenamiento
-                            territorial, planes de conservación y manejo ambiental.</li>
-                        <li class="list-group-item">✔ Estudios de transporte masivo, técnicos,
-                            legales, financieros y de infraestructura.</li>
-                        <li class="list-group-item">✔ Estudios de diseño y optimización de
-                            sistemas de acueducto y alcantarillado.</li>
-                        <li class="list-group-item">✔ Inventario de redes y catastro de
-                            servicios públicos.</li>
-                        <li class="list-group-item">✔ Inventarios viales.</li>
-                        <li class="list-group-item">✔ Estudios y diseños viales.</li>
-                        <li class="list-group-item">✔ Estudios de factibilidad.</li>
-                        <li class="list-group-item">✔ Estudios y diseños de infraestructura en
-                            general.</li>
-                        <li class="list-group-item">✔ Diseño y desarrollo de sistemas de
-                            información geográfica, SIG.</li>
-                        <li class="list-group-item">✔ Recolección de información
-                            georreferenciada mediante el uso de dispositivos tecnológicos.</li>
-                        <li class="list-group-item">✔ Levantamiento de terreno e infraestructura
-                            con escáner láser tridimensional terrestre.</li>
-                        <li class="list-group-item">✔ Fotografía aérea con Dispositivos de vuelo
-                            no tripulados - UAV y cartografía.</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección artículos publicados -->
-    <section id="articulos-publicados" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="section-title text-center mb-4">Artículos más recientes</h2>
-            <div class="d-flex flex-column gap-4">
-
-                <div class="card shadow-sm border-0 p-4">
-                    <h3 class="fs-5 fw-semibold mb-2">Determinación del índice de congestión vial para zonas urbanas por medio de velocidades obtenidas con la API de Google Maps</h3>
-                    <p class="text-secondary mb-1">Revistas UDISTRITAL págs: 29(84), 25–53.
-                        <a href="https://doi.org/10.14483/22487638.21214" target="_blank">DOI:10.14483/22487638.21214</a>
-                    </p>
-                    <p class="text-secondary mb-0">Autores: PARDO AMADO, M. T., SOLANO, E., MARTÍNEZ ESTUPIÑÁN, Y., Y CÁCERES JIMÉNEZ, J. J. (2025)</p>
-                </div>
-
-                <!-- Artículo 1 -->
-                <div class="card shadow-sm border-0 p-4">
-                    <h3 class="fs-5 fw-semibold mb-2">Building information modeling and complementary technologies in heritage buildings: A bibliometric analysis</h3>
-                    <p class="text-secondary mb-1">Países Bajos, RESULTS IN ENGINEERING ISSN: 2590-1230, 2024 vol:22 fasc: 9 págs: 1 - 28,
-                        <a href="https://doi.org/10.1016/j.rineng.2024.102192" target="_blank">DOI:10.1016/j.rineng.2024.102192</a>
-                    </p>
-                    <p class="text-secondary mb-0">Autores: KAREN MILADY CASTANEDA PARRA, OMAR GIOVANNY SANCHEZ RIVERA, CARLOS ALBERTO PENA SOTO</p>
-                </div>
-
-                <!-- Artículo 2 -->
-                <div class="card shadow-sm border-0 p-4">
-                    <h3 class="fs-5 fw-semibold mb-2">Headway regularity as an attribute for classifying bus drivers</h3>
-                    <p class="text-secondary mb-1">TRANSPORTMETRICA A TRANSPORT SCIENCE ISSN: 2324-9943, 2024 vol:1 fasc: págs: 1 - 24,
-                        <a href="https://doi.org/10.1080/23249935.2024.2337737" target="_blank">DOI:10.1080/23249935.2024.2337737</a>
-                    </p>
-                    <p class="text-secondary mb-0">Autores: YERLY FABIAN MARTINEZ ESTUPINAN</p>
-                </div>
-
-                <!-- Artículo 3 -->
-                <div class="card shadow-sm border-0 p-4">
-                    <h3 class="fs-5 fw-semibold mb-2">Aproximación al diseño conceptual de la gestión de carreteras inteligentes: una referencia a modelos de participación pública-privada</h3>
-                    <p class="text-secondary mb-1">Colombia, UIS INGENIERIAS ISSN: 2145-8456, 2024 vol:23 fasc: 1 págs: 159 - 174,
-                        <a href="https://doi.org/10.18273/revuin.v23n1-2024013" target="_blank">DOI:10.18273/2024013</a>
-                    </p>
-                    <p class="text-secondary mb-0">Autores: GUSTAVO PEDRAZA JAIMES, JAIME ALBERTO CAMACHO PICO, HERNAN PORRAS DIAZ</p>
-                </div>
-
-                <!-- Artículo 4 -->
-                <div class="card shadow-sm border-0 p-4">
-                    <h3 class="fs-5 fw-semibold mb-2">Building Information Modeling Uses and Complementary Technologies in Road Projects: A Systematic Review</h3>
-                    <p class="text-secondary mb-1">Suiza, BUILDINGS ISSN: 2075-5309, 2024 vol:14 fasc: 1 págs: 1 - 38,
-                        <a href="https://doi.org/10.3390/buildings14030563" target="_blank">DOI:10.3390/buildings14030563</a>
-                    </p>
-                    <p class="text-secondary mb-0">Autores: KAREN MILADY CASTANEDA PARRA, OMAR GIOVANNY SANCHEZ RIVERA, RODRIGO FERNANDO HERRERA VALENCIA, ADRIANA GOMEZ CABRERA, GUILLERMO MEJIA AGUILAR</p>
-                </div>
-
-                <!-- Artículo 5 -->
-                <div class="card shadow-sm border-0 p-4">
-                    <h3 class="fs-5 fw-semibold mb-2">Intra-urban variability of long-term exposure to PM2.5 and NO2 in five cities in Colombia</h3>
-                    <p class="text-secondary mb-1">ENVIRONMENTAL SCIENCE AND POLLUTION RESEARCH ISSN: 1614-7499, 2024 vol:31 fasc: págs: 3207 - 3221,
-                        <a href="https://doi.org/10.1007/s11356-023-31306-w" target="_blank">DOI:10.1007/s11356-023-31306-w</a>
-                    </p>
-                    <p class="text-secondary mb-0">Autores: JHON JAIRO CACERES JIMENEZ</p>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- proyectos-->
-    <section class="py-5" id="proyectos">
-        <div class="container">
-            <div class="row">
-                <div>
-                    <h1 style="text-align: center;">Proyectos</h1>
-                    <p style="text-align: justify;">Hemos ejecutado proyectos de consultoría, interventoría y asesoría
-                    técnica, denominados de extensión para diversas entidades de Colombia y participamos en
-                    proyectos de investigación en alianza con otros grupos.<br><br>
-
-                    Algunas entidades con las cuales la Universidad, por medio de Geomática, ha mantenido vínculos
-                    contractuales y de desarrollo de convenios son:</p>
-                    <div class="row justify-content-center">
-                        <div class="col-md-10">
-                            <div class="row row-cols-1 row-cols-md-2 g-3">
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Ministerio de Transporte</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Bucaramanga</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">CDMB</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Asociación Colombiana de Facultades de Ingeniería - ACOFI</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Área Metropolitana de Bucaramanga</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Corporación Autónoma Regional del Cesar - Corpocesar</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Corporación Autónoma Regional de la Guajira - Corpoguajira</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Departamento de Casanare</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Departamento de Santander</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Ecogás (Transportadora de Gas del Interior - TGI)</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Fondo Nacional de Gestión del Riesgo de Desastres - FNGRD</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Metrolínea S.A.</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Aguazul - Casanare</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Barrancabermeja</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Piedecuesta</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Sabana de Torres</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Socorro</span>
-                                    </div>
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="card h-100 shadow-sm border-0 ally-card">
-                                    <div class="card-body d-flex align-items-center gap-3">
-                                        <span class="fs-3">🏛</span>
-                                        <span class="fw-semibold">Municipio de Vélez</span>
-                                    </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Investigación -->
-    <section id="investigacion" class="py-5">
-    <h2 class="section-title">Investigación</h2>
-    <div class="cards-container">
-        <!-- https://www.codeply.com/go/roydoXgaLr/bootstrap-4-flip-cards -->
-
-        <div class="flip-card" data-title="Factibilidad" data-html="proyectos/proyecto01.html">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/portfolio/Convenio3023616.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h4>Factibilidad técnica y económica de residuos aceitosos para red vial de bajo tránsito</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card" data-title="Uso de la tecnología" data-html="proyectos/proyecto02.html">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/portfolio/Convenio3044677.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h4>Uso de la tecnología MBL para mejoramiento de la red vial de bajo tránsito</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card" data-title="Actividad física" data-html="proyectos/proyecto1.html">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/portfolio/1.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h4>Actividad física y parques en Bucaramanga</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card" data-title="An Environmental" data-html="proyectos/proyecto2.html">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/portfolio/2.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h4>An Environmental and Occupational Health Research and Training Hub: Colombia</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card" data-title="Programa de conocimiento" data-html="proyectos/proyecto3.html">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/portfolio/3.jpg" alt="Avatar" style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h4>Programa de conocimiento y acción para la reducción de la dimensión de carga de la enfermedad
-                        cardiovascular en Colombia</h4>
-                </div>
-            </div>
-        </div>
-
-        <div class="flip-card" data-title="Marco conceptual" data-html="proyectos/proyecto75.html">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="https://acofipapers.org/public/journals/1/cover_issue_9_es_ES.jpg" alt="Avatar"
-                        style="width:300px;height:300px;">
-                </div>
-                <div class="flip-card-back">
-                    <h4>Marco conceptual y metodológico para medir y evaluar la competencia de resolver problemas en
-                        programas de ingeniería civil en Colombia</h4>
-                </div>
-            </div>
-        </div>
+<!-- NAVBAR -->
+<nav>
+  <a class="nav-brand" href="#">
+    <img src="images/logo.png" alt="Geomática" style="width:150px; height:auto;">
+    <!--<div class="nav-brand-box">G</div>
+    <div class="nav-brand-label">
+      Geomática UIS
+      <small>desde 1998</small>-->
     </div>
-    </section>
+  </a>
+  <ul class="nav-links">
+    <li><a href="#carrusel">Inicio</a></li>
+    <li><a href="#semillero">Semillero</a></li>
+    <li><a href="#lineas">Investigación</a></li>
+    <li><a href="#servicios">Servicios</a></li>
+    <li><a href="#integrantes">Integrantes</a></li>
+    <li><a href="#articulos">Publicaciones</a></li>
+    <li><a href="#proyectos">Proyectos</a></li>
+    <li><a href="#consultorias">Consultorías</a></li>
+    <li><a href="#contacto">Contacto</a></li>
+  </ul>
+  <a href="https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000003022" target="_blank" class="nav-btn">GrupLac ↗</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menú">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
 
-    <!-- Sección Consultorías -->
-    <section class="py-5" id="consultorias">
-    <h2 class="section-title">Consultorías</h2>
-        <div class="cards-container">
-            <div class="flip-card" data-title="Interventoría" data-html="proyectos/proyecto76.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/proyectos_76.JPG" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Interventoría para la fabricación, suministro, transporte, instalación y puesta en
-                            funcionamiento de 88 embarcaderos fluviales flotantes.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Modelo Nacional" data-html="proyectos/proyecto58.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/6.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Modelo Nacional de Riesgo Sísmico de Colombia (MNRS) fases 1, 2 y 3</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Estudios y diseños" data-html="proyectos/proyecto60.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/proyectos_60.png" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Estudios y diseños de la calle 53-54, conexión oriente — occidente, de Bucaramanga</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Lineamientos para la recuperación" data-html="proyectos/proyecto61.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/61.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Lineamientos para la recuperación económica del departamento de Santander por la COVID-19</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Consulta de información" data-html="proyectos/proyecto62.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/62.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Consulta de información georreferenciada de obras y gestiones de la administración
-                            departamental.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Aunar esfuerzos entre el AMB y UIS" data-html="proyectos/proyecto63.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/proyectos_5.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Aunar esfuerzos entre el AMB y UIS para la asesoría técnica, socioeconómica, normativa y
-                            ambiental para la construcción del nuevo relleno sanitario.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Aunar esfuerzos entre el AMB y la UIS" data-html="proyectos/proyecto64.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/proyectos_5.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Aunar esfuerzos entre el AMB y la UIS para elaborar el estudio de factibilidad y los diseños de
-                            ingeniería de detalle, para la construcción de la galería de drenaje en el Barrio Esperanza II.
-                        </h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Formulación del plan maestro" data-html="proyectos/proyecto65.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/32_1.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Formulación del plan maestro de movilidad urbana del municipio de socorro.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Formulación del plan Desarrollo Departamental"
-                data-html="proyectos/proyecto66.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/6.png" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Formulación del plan Desarrollo Departamental "Santander Nos Une 2016-2019".</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Sistema de Información Geográfica del AMB"
-                data-html="proyectos/proyecto9.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/9.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Sistema de Información Geográfica del AMB - Fase II</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Actualización de los estudios de amenaza"
-                data-html="proyectos/proyecto6.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/6_1.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Actualización de los estudios de amenaza, vulnerabilidad y riesgo por inundación del Río de Oro
-                            y del Río Frio.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Estudio de amenaza, vulnerabilidad" data-html="proyectos/proyecto7.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/7.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Estudio de amenaza, vulnerabilidad y riesgo por movimientos en masa del sector Norte de
-                            Bucaramanga.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Formulación del Plan de Gestión" data-html="proyectos/proyecto8.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/8.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Formulación del Plan de Gestión Integral del Recurso Hídrico Urbano del Municipio de Aguazul,
-                            Casanare.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Sistema de Información Geográfica del AMB"
-                data-html="proyectos/proyecto5.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/5.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Sistema de Información Geográfica del AMB - Fase I.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Estudio de amenaza, vulnerabilidad" data-html="proyectos/proyecto10.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/10_1.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Estudio de amenaza, vulnerabilidad y riesgo por movimientos en masa del Municipio de Vélez -
-                            Santander.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Diseño de la infraestructura prioritaria"
-                data-html="proyectos/proyecto11.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/11.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Diseño de la infraestructura prioritaria para el tránsito de vehículos de carga y de pasajeros
-                            sobre el corredor Puerta Norte - Calle 71 - Obras Públicas</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Elaboración de los estudios y diseños" data-html="proyectos/proyecto12.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/12.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Elaboración de los estudios y diseños arquitectónicos, urbanísticos y de ingeniería para la
-                            construcción del parque contemplativo de Piedecuesta - Santander.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Proyectos estratégicos y programáticos"
-                data-html="proyectos/proyecto13.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/13.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Proyectos estratégicos y programáticos contemplados en el Plan de Desarrollo Municipal -
-                            Barrancabermeja Ciudad Futuro 2012-2015.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Ajuste a los componentes ambiental" data-html="proyectos/proyecto15.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/15.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Ajuste a los componentes ambiental y geotécnico del macroproyecto de interés social del valle de
-                            Guatiguará Piedecuesta, ‘Pienta’.</h4>
-                    </div>
-                </div>
-            </div>
-    
-            <div class="flip-card" data-title="Elaboración, edición, diagramación" data-html="proyectos/proyecto68.html">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img src="images/portfolio/proyectos_5.jpg" alt="Avatar" style="width:300px;height:300px;">
-                    </div>
-                    <div class="flip-card-back">
-                        <h4>Elaboración, edición, diagramación y publicación de los documentos resumen de los planes maestro
-                            de movilidad urbana.</h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>    
-    
-    <!-- Modal con iframe -->
-    <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="miModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="miModalLabel">Detalles</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
-                </div>
-                <div class="modal-body">
-                    <iframe id="modalIframe" src="" width="100%" height="750px" style="border:none;"></iframe>
-                </div>
-            </div>
-        </div>
+<!-- MENÚ MÓVIL -->
+<div class="nav-mobile-menu" id="mobileMenu">
+  <a href="#carrusel" onclick="closeMobile()">Inicio</a>
+  <a href="#semillero" onclick="closeMobile()">Semillero</a>
+  <a href="#lineas" onclick="closeMobile()">Investigación</a>
+  <a href="#servicios" onclick="closeMobile()">Servicios</a>
+  <a href="#integrantes" onclick="closeMobile()">Integrantes</a>
+  <a href="#articulos" onclick="closeMobile()">Publicaciones</a>
+  <a href="#proyectos" onclick="closeMobile()">Proyectos</a>
+  <a href="#consultorias" onclick="closeMobile()">Consultorías</a>
+  <a href="#contacto" onclick="closeMobile()">Contacto</a>
+  <a href="https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000003022" target="_blank">GrupLac ↗</a>
+</div>
+
+<!-- CARRUSEL -->
+<section class="carousel-section" id="carrusel">
+  <div class="swiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><div class="image-container"><img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072644-1.jpg" alt="Imagen 1"></div></div>
+      <div class="swiper-slide"><div class="image-container"><img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072656-3.jpg" alt="Imagen 2"></div></div>
+      <div class="swiper-slide"><div class="image-container"><img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072651-2.jpg" alt="Imagen 3"></div></div>
+      <div class="swiper-slide"><div class="image-container"><img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250219143422-uis.jpg" alt="Imagen 4"></div></div>
+      <div class="swiper-slide"><div class="image-container"><img src="https://icgaroa.com/wp-content/uploads/2022/04/otros_03.jpg" alt="Imagen 5"></div></div>
+      <div class="swiper-slide"><div class="image-container"><img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250224094451-08032024_074538.jpg" alt="Imagen 6"></div></div>
+      <div class="swiper-slide"><div class="image-container"><img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20251204153501-img_7056.jpeg" alt="Imagen 7"></div></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg-grid"></div>
+  <div class="hero-bg-glow"></div>
+  <div class="hero-topo"></div>
+  <div class="hero-inner">
+    <div>
+      <div class="hero-badge">
+        <div class="badge-dot"></div>
+        <span>Grupo de Investigación · UIS</span>
+      </div>
+      <h1 class="hero-h1">
+        Geomática,<br>
+        <span class="accent">Gestión y</span><br>
+        Optimización
+	<span class="accent">de sistemas</span><br>
+      </h1>
+      <p class="hero-desc">
+        Grupo de investigación adscrito a la Escuela de Ingeniería Civil de la Universidad Industrial de Santander, activo desde 1998. Soluciones en SIG, infraestructura, movilidad y gestión del riesgo para Colombia y la región.
+      </p>
+      <div class="hero-btns">
+        <a href="#lineas" class="btn-fill">Explorar investigación</a>
+        <a href="#contacto" class="btn-outline-w">Contáctenos</a>
+      </div>
+    </div>
+    <div class="hero-cards">
+      <div class="hcard">
+        <div class="hcard-icon">📅</div>
+        <div class="hcard-num">27<sup>+</sup></div>
+        <div class="hcard-label">Años de trayectoria</div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-icon">📄</div>
+        <div class="hcard-num">6<sup>+</sup></div>
+        <div class="hcard-label">Publicaciones recientes</div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-icon">🏛️</div>
+        <div class="hcard-num">18<sup>+</sup></div>
+        <div class="hcard-label">Entidades aliadas</div>
+      </div>
+      <div class="hcard">
+        <div class="hcard-icon">🗺️</div>
+        <div class="hcard-num">3</div>
+        <div class="hcard-label">Líneas de investigación</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section class="about" id="about">
+  <div class="stag"><span>Quiénes somos</span></div>
+  <h2 class="sh1">Un grupo que transforma <em>territorio</em></h2>
+  <div class="about-grid">
+    <div class="about-text">
+      <div class="about-since">1998</div>
+      <p class="info-text">
+      Con el ánimo de dar soluciones concretas a problemas específicos de los diferentes sectores de la sociedad colombiana, nace el grupo <strong>GEOMÁTICA</strong>. Un grupo de investigación y desarrollo que da inicio a sus labores en mayo de 1998. A lo largo de estos años ha logrado consolidar su labor a través del uso de herramientas apoyadas en los sistemas de información geográfica, así como en proyectos enfocados en la generación de planes de ordenamiento territorial, planes de infraestructura vial, estudios de ordenamiento y manejo de cuencas hidrográficas, diseño de sistemas de transporte masivo, planes de movilidad urbana de los municipios del área metropolitana de Bucaramanga, diseño de soluciones viales en los principales sectores críticos de movilidad del Municipio de Bucaramanga y del Municipio de Barrancabermeja, diseños de proyectos de transformación del espacio público del área urbana del Municipio de Barrancabermeja, entre otros proyectos de gran impacto para la región.
+    </p>
+    </div>
+    <div class="about-right">
+      <div class="about-img-wrap">
+        <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250219143422-uis.jpg" alt="UIS" onerror="this.style.display='none'">
+      </div>
+      <div class="about-float">
+        <strong>Cat. A1</strong>
+        <span>Minciencias</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN INFORMATIVA
+<section class="info-section" id="geomatica-info">
+  <div class="info-inner">
+    <div class="stag"><span>Sobre el grupo</span></div>
+    <h2 class="sh1">Geomática, Gestión y <em>Optimización de Sistemas</em></h2>
+    <p class="info-text">
+      Con el ánimo de dar soluciones concretas a problemas específicos de los diferentes sectores de la sociedad colombiana, nace el grupo <strong>GEOMÁTICA</strong>. Un grupo de investigación y desarrollo que da inicio a sus labores en mayo de 1998. A lo largo de estos años ha logrado consolidar su labor a través del uso de herramientas apoyadas en los sistemas de información geográfica, así como en proyectos enfocados en la generación de planes de ordenamiento territorial, planes de infraestructura vial, estudios de ordenamiento y manejo de cuencas hidrográficas, diseño de sistemas de transporte masivo, planes de movilidad urbana de los municipios del área metropolitana de Bucaramanga, diseño de soluciones viales en los principales sectores críticos de movilidad del Municipio de Bucaramanga y del Municipio de Barrancabermeja, diseños de proyectos de transformación del espacio público del área urbana del Municipio de Barrancabermeja, entre otros proyectos de gran impacto para la región.
+    </p>
+  </div>
+</section> -->
+
+<!-- SECCIÓN MAESTRÍA PDF -->
+<section class="maestria-section" id="geomatica-pdf">
+  <div class="maestria-inner">
+    <div class="maestria-header">
+      <div class="stag"><span>Posgrado</span></div>
+      <h2 class="sh1">Maestría en Ingeniería de <em>Transporte y Logística</em></h2>
+    </div>
+    <div class="maestria-grid">
+      <div class="maestria-iframe-wrap">
+        <iframe src="https://drive.google.com/file/d/1NHes4dSd1Q4CaV7Ma3U1tnipqfZiFeQ1/preview#view=FitH"
+          allowfullscreen></iframe>
+      </div>
+      <div class="maestria-cta">
+        <div class="maestria-cta-icon">🎓</div>
+        <h3 class="maestria-cta-title">¿Te interesa esta maestría?</h3>
+        <p class="maestria-cta-text">Completa el formulario de pre-registro y recibe información detallada sobre el programa, requisitos y proceso de admisión.</p>
+        <a href="https://forms.gle/Au4uGYSHLtNwfak4A" target="_blank" class="btn-fill">
+          Pre-registro Maestría ↗
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN PANORÁMICA 360 -->
+<section class="panoramica-section" id="panoramica">
+  <div class="panoramica-inner">
+    <div class="stag"><span>Territorio</span></div>
+    <h2 class="sh1">Panorámica 360° <em>Represa Hidrosogamoso</em></h2>
+    <div class="panoramica-wrap">
+      <iframe
+        src="https://momento360.com/e/u/22a6296dc9f5471dad1657b15f3fdb77?utm_campaign=embed&utm_source=other&heading=0&pitch=0&field-of-view=75&size=medium&display-plan=true"
+        allowfullscreen frameborder="0">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- SECCIÓN SEMILLERO -->
+<section class="semillero-section" id="semillero">
+  <div class="semillero-inner">
+    <div class="stag"><span>Formación</span></div>
+    <h2 class="sh1">Semillero <em>SURE</em></h2>
+
+    <div class="semillero-grid">
+      <div class="semillero-pdf-wrap">
+        <iframe src="https://drive.google.com/file/d/17RxxZHSH9dmceEdzcBEHncdymHonhYSu/preview#view=FitH"
+          allow="autoplay"></iframe>
+      </div>
+      <div class="semillero-text">
+        <h3 class="semillero-subtitle">Ciclo de charlas: Ingeniería e Investigación con Propósito (2025)</h3>
+        <div class="semillero-divider"></div>
+        <p>Esta iniciativa buscó generar un impacto positivo en la formación académica y humana del público asistente, promoviendo el acceso libre a conocimiento especializado sobre infraestructura resiliente y sostenible. Las charlas fueron ofrecidas sin costo por profesionales comprometidos con el desarrollo del país, fortaleciendo el vínculo entre la universidad y la sociedad.</p>
+        <p>Se abordaron problemáticas tangibles como el cambio climático, la innovación para el desarrollo rural y la sostenibilidad en obras civiles, entre otros. Además, se fomentó la participación activa de los estudiantes del Semillero en la organización de los eventos, fortaleciendo habilidades como el trabajo colaborativo, la responsabilidad social y el liderazgo.</p>
+        <p>Las charlas estuvieron dirigidas a estudiantes universitarios, miembros de la Comisión de Jóvenes de la Sociedad Santandereana de Ingenieros y de la SEIC. <strong>La participación no tuvo costo para el público.</strong></p>
+        <p class="semillero-note">📖 A la izquierda encontrarás la cartilla resumen de las charlas. Las charlas virtuales grabadas están disponibles abajo.</p>
+      </div>
     </div>
 
-    <!-- Mapa -->
-    <section class="py-5">
-        <div class="container text-center">
-            <h3 class="text-primary">Nuestra Ubicación</h3>
-            <div class="ratio ratio-16x9">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7917.856280694521!2d-73.1219268255956!3d7.134308575189676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65adfdb5be1bea3a!2sUIS+Universidad+Industrial+de+Santander!5e0!3m2!1ses!2sco!4v1544050603592"
-                    allowfullscreen="" loading="lazy">
-                </iframe>
-            </div>
+    <div class="semillero-videos">
+      <div class="svideo-wrap">
+        <iframe src="https://www.youtube.com/embed/hzbKGZlnPOs"
+          title="Charla 1 — Semillero SURE" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="svideo-wrap">
+        <iframe src="https://www.youtube.com/embed/2NRULdpHOUA"
+          title="Charla 2 — Semillero SURE" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+      <div class="svideo-wrap">
+        <iframe src="https://www.youtube.com/embed/-7aWdUIw-Ew"
+          title="Charla 3 — Semillero SURE" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LÍNEAS DE INVESTIGACIÓN -->
+<section class="lineas" id="lineas">
+  <div class="stag"><span>Líneas de investigación</span></div>
+  <h2 class="sh1">Tres ejes que guían <em>nuestro trabajo</em></h2>
+  <div class="lineas-grid">
+    <div class="lcard">
+      <div class="lcard-n">01</div>
+      <div class="lcard-ico">🌿</div>
+      <div class="lcard-title">Ambientes construidos saludables y sostenibles</div>
+      <p class="lcard-text">Contribuimos al desarrollo de ambientes que promuevan la salud integral mediante investigación, diseño y gestión con enfoque en innovación social. Abordamos salud pública, vectores epidemiológicos y calidad de infraestructura.</p>
+    </div>
+    <div class="lcard">
+      <div class="lcard-n">02</div>
+      <div class="lcard-ico">⚠️</div>
+      <div class="lcard-title">Riesgo y Resiliencia en Ambientes Construidos</div>
+      <p class="lcard-text">Entendemos cómo las comunidades y sistemas de infraestructura interactúan con riesgos naturales, identificamos medidas de mitigación y fortalecemos la capacidad de respuesta con enfoque social y ambiental.</p>
+    </div>
+    <div class="lcard">
+      <div class="lcard-n">03</div>
+      <div class="lcard-ico">🚌</div>
+      <div class="lcard-title">Movilidad y Transporte Sostenible para el Desarrollo Regional</div>
+      <p class="lcard-text">Proponemos soluciones adaptadas a la realidad local: reducción de congestión, mejora del transporte público, modos sostenibles, eficiencia energética y conectividad territorial resiliente.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="servicios" id="servicios">
+  <div class="stag"><span>Lo que ofrecemos</span></div>
+  <h2 class="sh1">Servicios de <em>consultoría e ingeniería</em></h2>
+  <div class="srv-grid">
+    <div class="scard"><div class="scard-ico">🛡️</div><div class="scard-title">Gestión del riesgo: amenaza, vulnerabilidad y riesgo</div></div>
+    <div class="scard"><div class="scard-ico">🗾</div><div class="scard-title">Planes de ordenamiento territorial y manejo ambiental</div></div>
+    <div class="scard"><div class="scard-ico">🚇</div><div class="scard-title">Estudios de transporte masivo: técnicos, legales y financieros</div></div>
+    <div class="scard"><div class="scard-ico">💧</div><div class="scard-title">Diseño y optimización de acueducto y alcantarillado</div></div>
+    <div class="scard"><div class="scard-ico">📡</div><div class="scard-title">Inventario de redes y catastro de servicios públicos</div></div>
+    <div class="scard"><div class="scard-ico">🛣️</div><div class="scard-title">Inventarios viales y estudios de diseño vial</div></div>
+    <div class="scard"><div class="scard-ico">📊</div><div class="scard-title">Estudios de factibilidad e infraestructura en general</div></div>
+    <div class="scard"><div class="scard-ico">🌐</div><div class="scard-title">Diseño y desarrollo de Sistemas de Información Geográfica (SIG)</div></div>
+    <div class="scard"><div class="scard-ico">📍</div><div class="scard-title">Recolección de información georreferenciada con tecnología</div></div>
+    <div class="scard"><div class="scard-ico">🛰️</div><div class="scard-title">Escáner láser 3D terrestre para levantamiento de terreno</div></div>
+    <div class="scard"><div class="scard-ico">🛸</div><div class="scard-title">Fotografía aérea con UAV y cartografía de alta resolución</div></div>
+    <div class="scard"><div class="scard-ico">🔬</div><div class="scard-title">Asesoría técnica, interventoría y estudios especializados</div></div>
+  </div>
+</section>
+
+<!-- INTEGRANTES -->
+<section class="integrantes" id="integrantes">
+  <div class="stag"><span>Equipo</span></div>
+  <h2 class="sh1">Integrantes <em>activos</em></h2>
+  <div class="members-grid">
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U9200/20210620145810-image-min.png" alt="Hernan Porras">
+      <div>
+        <div class="mcard-name">Hernán Porras Díaz</div>
+        <a class="mcard-link" href="https://profesores.uis.edu.co/escuela-ingenieria-civil/hernan-porras-diaz-es/" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U10446/20210913204232-profe_jhon.jpg" alt="Jhon Caceres">
+      <div>
+        <div class="mcard-name">Jhon Jairo Cáceres Jiménez</div>
+        <div class="mcard-role">Director del Grupo</div>
+        <a class="mcard-link" href="https://profesores.uis.edu.co/escuela-ingenieria-civil/jhon-jairo-caceres-jimenez-es/" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U8268/20240409201157-4b.jpg" alt="Jose Benjumea">
+      <div>
+        <div class="mcard-name">José Miguel Benjumea Royero</div>
+        <a class="mcard-link" href="https://profesores.uis.edu.co/escuela-ingenieria-civil/jose-miguel-benjumea-royero-es/" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20260310144704-yuly.png" alt="Yuly Lopez">
+      <div>
+        <div class="mcard-name">Yuly Fernanda López Contreras</div>
+        <a class="mcard-link" href="https://profesores.uis.edu.co/escuela-ingenieria-quimica/yuly-fernanda-lopez-contreras-es/" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://profesores.uis.edu.co/wp-content/uploads/elementor/thumbs/Gustavo-Chio-Cho-03-r9g2c5lkptwuybumx6o8v9indpbxtnusbmbob3x0ag.png" alt="Gustavo Chio">
+      <div>
+        <div class="mcard-name">Gustavo Chio Cho</div>
+        <a class="mcard-link" href="https://profesores.uis.edu.co/escuela-ingenieria-civil/gustavo-chio-cho-es/" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U14767/20210623121900-foto_miller-2021f_.jpg" alt="Miller Salas">
+      <div>
+        <div class="mcard-name">Miller Humberto Salas Rondón</div>
+        <a class="mcard-link" href="https://ingenieriacivil.uis.edu.co/MillerhumbertoSalas" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <img class="mcard-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/mp/U8259/20210716164803-profe_yerly.jpg" alt="Yerly Martinez">
+      <div>
+        <div class="mcard-name">Yerly Fabián Martínez Estupiñán</div>
+        <a class="mcard-link" href="https://profesores.uis.edu.co/escuela-ingenieria-civil/yerly-fabian-martinez-estupinan-es/" target="_blank">↗ Perfil UIS</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <div class="mcard-ph">VQ</div>
+      <div>
+        <div class="mcard-name">Vanessa Quiroga Arciniegas</div>
+        <a class="mcard-link" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000062847" target="_blank">↗ CvLac</a>
+      </div>
+    </div>
+    <div class="mcard">
+      <div class="mcard-ph">SY</div>
+      <div>
+        <div class="mcard-name">Sandy Jair Yanes Sánchez</div>
+        <a class="mcard-link" href="https://scienti.minciencias.gov.co/cvlac/visualizador/generarCurriculoCv.do?cod_rh=0000194662" target="_blank">↗ CvLac</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- POSGRADOS -->
+<section class="posgrados" id="posgrados">
+  <div class="stag"><span>Formación avanzada</span></div>
+  <h2 class="sh1">Estudiantes de <em>posgrado</em></h2>
+  <div class="pg-grid">
+    <div class="pgcard">
+      <img class="pg-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20260310142851-deicy.png" alt="Deicy Duarte">
+      <div>
+        <div class="pg-name">Deicy Duarte Cristancho</div>
+        <span class="pg-prog">Maestría en Ing. Civil</span>
+        <p class="pg-bio">Geóloga egresada de la UIS (2021) y Especialista en Geotecnia Ambiental de la UDES (2024). Su investigación explora modelos emergentes para la predicción de susceptibilidad a remoción en masa.</p>
+      </div>
+    </div>
+    <div class="pgcard">
+      <img class="pg-avatar" src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/contenidos/imagenes/20260310142817-roberto.png" alt="Roberto Tamara">
+      <div>
+        <div class="pg-name">Roberto José Tamara Corredor</div>
+        <span class="pg-prog">Doctorado en Ing. Civil</span>
+        <p class="pg-bio">Ingeniero Civil de la UIS (2025). Su investigación se centra en metodologías para la extracción automática de activos viales en vías terciarias en la región de Santander.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARTÍCULOS -->
+<section class="articulos" id="articulos">
+  <div class="stag"><span>Producción científica</span></div>
+  <h2 class="sh1">Publicaciones <em>recientes</em></h2>
+  <div class="art-list">
+    <div class="acard">
+      <div>
+        <div class="acard-title">Determinación del índice de congestión vial para zonas urbanas por medio de velocidades obtenidas con la API de Google Maps</div>
+        <div class="acard-meta">Revistas UDISTRITAL, 29(84), pp. 25–53 · <a href="https://doi.org/10.14483/22487638.21214" target="_blank">DOI ↗</a><br>Pardo Amado M.T., Solano E., Martínez Estupiñán Y., Cáceres Jiménez J.J.</div>
+      </div>
+      <div class="acard-year">2025</div>
+    </div>
+    <div class="acard">
+      <div>
+        <div class="acard-title">Building information modeling and complementary technologies in heritage buildings: A bibliometric analysis</div>
+        <div class="acard-meta">Results in Engineering, ISSN 2590-1230, vol. 22 · <a href="https://doi.org/10.1016/j.rineng.2024.102192" target="_blank">DOI ↗</a><br>Castañeda Parra K.M., Sánchez Rivera O.G., Peña Soto C.A.</div>
+      </div>
+      <div class="acard-year">2024</div>
+    </div>
+    <div class="acard">
+      <div>
+        <div class="acard-title">Headway regularity as an attribute for classifying bus drivers</div>
+        <div class="acard-meta">Transportmetrica A: Transport Science, ISSN 2324-9943 · <a href="https://doi.org/10.1080/23249935.2024.2337737" target="_blank">DOI ↗</a><br>Martínez Estupiñán Y.F.</div>
+      </div>
+      <div class="acard-year">2024</div>
+    </div>
+    <div class="acard">
+      <div>
+        <div class="acard-title">Aproximación al diseño conceptual de la gestión de carreteras inteligentes: una referencia a modelos de participación pública-privada</div>
+        <div class="acard-meta">UIS Ingenierías, ISSN 2145-8456, vol. 23 · <a href="https://doi.org/10.18273/revuin.v23n1-2024013" target="_blank">DOI ↗</a><br>Pedraza Jaimes G., Camacho Pico J.A., Porras Díaz H.</div>
+      </div>
+      <div class="acard-year">2024</div>
+    </div>
+    <div class="acard">
+      <div>
+        <div class="acard-title">Building Information Modeling Uses and Complementary Technologies in Road Projects: A Systematic Review</div>
+        <div class="acard-meta">Buildings (Suiza), ISSN 2075-5309, vol. 14 · <a href="https://doi.org/10.3390/buildings14030563" target="_blank">DOI ↗</a><br>Castañeda Parra K.M. et al.</div>
+      </div>
+      <div class="acard-year">2024</div>
+    </div>
+    <div class="acard">
+      <div>
+        <div class="acard-title">Intra-urban variability of long-term exposure to PM2.5 and NO2 in five cities in Colombia</div>
+        <div class="acard-meta">Environmental Science and Pollution Research, ISSN 1614-7499, vol. 31 · <a href="https://doi.org/10.1007/s11356-023-31306-w" target="_blank">DOI ↗</a><br>Cáceres Jiménez J.J.</div>
+      </div>
+      <div class="acard-year">2024</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROYECTOS -->
+<section class="proyectos" id="proyectos">
+  <div class="stag"><span>Portafolio</span></div>
+  <h2 class="sh1">Proyectos e <em>investigaciones</em></h2>
+  <div class="proj-grid">
+    <div class="pcard">
+      <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072644-1.jpg" alt="P1">
+      <div class="pcard-overlay"><div class="pcard-title">Factibilidad técnica y económica de residuos aceitosos para red vial de bajo tránsito</div></div>
+    </div>
+    <div class="pcard">
+      <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072656-3.jpg" alt="P2">
+      <div class="pcard-overlay"><div class="pcard-title">Uso de tecnología MBL para mejoramiento de la red vial de bajo tránsito</div></div>
+    </div>
+    <div class="pcard">
+      <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20230812072651-2.jpg" alt="P3">
+      <div class="pcard-overlay"><div class="pcard-title">Modelo Nacional de Riesgo Sísmico de Colombia (MNRS)</div></div>
+    </div>
+    <div class="pcard">
+      <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250219143422-uis.jpg" alt="P4">
+      <div class="pcard-overlay"><div class="pcard-title">Estudios y diseños de la calle 53-54, conexión oriente–occidente de Bucaramanga</div></div>
+    </div>
+    <div class="pcard">
+      <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20250224094451-08032024_074538.jpg" alt="P5">
+      <div class="pcard-overlay"><div class="pcard-title">Actividad física y parques en Bucaramanga</div></div>
+    </div>
+    <div class="pcard">
+      <img src="https://ingenieriacivil.uis.edu.co/eisi/images/Grupos/G12/banner/20251204153501-img_7056.jpeg" alt="P6">
+      <div class="pcard-overlay"><div class="pcard-title">Sistema de Información Geográfica del AMB – Fases I y II</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONSULTORÍAS -->
+<section class="consultorias" id="consultorias">
+  <div class="stag"><span>Extensión</span></div>
+  <h2 class="sh1">Consultorías e <em>Interventorías</em></h2>
+  <div class="flip-grid">
+
+    <div class="fcard" data-title="Interventoría" data-html="proyectos/proyecto76.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/proyectos_76.JPG" alt="Interventoría embarcaderos" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">⚓</div>
         </div>
-    </section>
-
-    <!-- Contacto -->
-    <section class="bg-light py-5" id="contact-us">
-        <div class="container text-center">
-            <h2 class="text-primary">Contáctanos</h2>
-
-            <p><i class="fa fa-map-marker-alt"></i> Bucaramanga, Colombia.</p>
-            <p><i class="fa fa-phone"></i> 6076344000 ext. 2495</p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:geomatica@uis.edu.co">geomatica@uis.edu.co</a></p>
-            <p><i class="fa fa-envelope"></i> <a href="mailto:geomatica.proy@uis.edu.co">geomatica.proy@uis.edu.co</a>
-            </p>
-            <p> <a href="https://x.com/GeomaticaUIS" target="_blank"> <i class="fa-brands fa-x-twitter"></i> X (Twitter)
-                </a> </p>
-            <p> <a href="https://www.instagram.com/geomaticauis/" target="_blank"> <i
-                        class="fa-brands fa-instagram"></i> Instagram </a></p>
-            <p> <a href="https://www.youtube.com/channel/UCLf7fBC1LOQZbbrlob6tUow" target="_blank"><i
-                        class="fa-brands fa-youtube"></i> YouTube </a> </p>
+        <div class="fcard-back">
+          <p>Interventoría para la fabricación, suministro, transporte, instalación y puesta en funcionamiento de 88 embarcaderos fluviales flotantes.</p>
         </div>
-    </section>
+      </div>
+    </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Geomática UIS - Todos los derechos reservados.</p>
-    </footer>
+    <div class="fcard" data-title="Modelo Nacional de Riesgo Sísmico" data-html="proyectos/proyecto58.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/6.jpg" alt="Modelo Sísmico" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🏔️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Modelo Nacional de Riesgo Sísmico de Colombia (MNRS) fases 1, 2 y 3.</p>
+        </div>
+      </div>
+    </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <div class="fcard" data-title="Estudios y diseños calle 53-54" data-html="proyectos/proyecto60.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/proyectos_60.png" alt="Calle 53-54" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🛣️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Estudios y diseños de la calle 53-54, conexión oriente — occidente, de Bucaramanga.</p>
+        </div>
+      </div>
+    </div>
 
+    <div class="fcard" data-title="Lineamientos recuperación económica COVID-19" data-html="proyectos/proyecto61.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/61.jpg" alt="Recuperación COVID" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">📋</div>
+        </div>
+        <div class="fcard-back">
+          <p>Lineamientos para la recuperación económica del departamento de Santander por la COVID-19.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Consulta de información georreferenciada" data-html="proyectos/proyecto62.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/62.jpg" alt="Información georreferenciada" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">📍</div>
+        </div>
+        <div class="fcard-back">
+          <p>Consulta de información georreferenciada de obras y gestiones de la administración departamental.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="AMB y UIS — Relleno sanitario" data-html="proyectos/proyecto63.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/proyectos_5.jpg" alt="AMB Relleno" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">♻️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Aunar esfuerzos entre el AMB y UIS para asesoría técnica, socioeconómica, normativa y ambiental para la construcción del nuevo relleno sanitario.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="AMB y UIS — Galería de drenaje Barrio Esperanza II" data-html="proyectos/proyecto64.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/proyectos_5.jpg" alt="Galería drenaje" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">💧</div>
+        </div>
+        <div class="fcard-back">
+          <p>Aunar esfuerzos entre el AMB y la UIS para elaborar el estudio de factibilidad y los diseños de ingeniería de detalle para la galería de drenaje en el Barrio Esperanza II.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Plan maestro de movilidad — Socorro" data-html="proyectos/proyecto65.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/32_1.jpg" alt="Plan Movilidad Socorro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🚌</div>
+        </div>
+        <div class="fcard-back">
+          <p>Formulación del plan maestro de movilidad urbana del municipio de Socorro.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Plan de Desarrollo Departamental Santander Nos Une 2016-2019" data-html="proyectos/proyecto66.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/6.png" alt="Plan Santander" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🗺️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Formulación del Plan de Desarrollo Departamental "Santander Nos Une 2016-2019".</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Sistema de Información Geográfica del AMB — Fase II" data-html="proyectos/proyecto9.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/9.jpg" alt="SIG AMB II" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🌐</div>
+        </div>
+        <div class="fcard-back">
+          <p>Sistema de Información Geográfica del AMB — Fase II.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Amenaza por inundación — Río de Oro y Río Frío" data-html="proyectos/proyecto6.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/6_1.jpg" alt="Amenaza inundación" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🌊</div>
+        </div>
+        <div class="fcard-back">
+          <p>Actualización de los estudios de amenaza, vulnerabilidad y riesgo por inundación del Río de Oro y del Río Frío.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Movimientos en masa — sector Norte de Bucaramanga" data-html="proyectos/proyecto7.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/7.jpg" alt="Movimientos en masa Norte" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">⛰️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Estudio de amenaza, vulnerabilidad y riesgo por movimientos en masa del sector Norte de Bucaramanga.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Gestión Integral del Recurso Hídrico — Aguazul, Casanare" data-html="proyectos/proyecto8.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/8.jpg" alt="Recurso Hídrico Aguazul" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🏞️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Formulación del Plan de Gestión Integral del Recurso Hídrico Urbano del Municipio de Aguazul, Casanare.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Sistema de Información Geográfica del AMB — Fase I" data-html="proyectos/proyecto5.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/5.jpg" alt="SIG AMB I" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🌐</div>
+        </div>
+        <div class="fcard-back">
+          <p>Sistema de Información Geográfica del AMB — Fase I.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Movimientos en masa — Municipio de Vélez, Santander" data-html="proyectos/proyecto10.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/10_1.jpg" alt="Movimientos en masa Vélez" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">⛰️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Estudio de amenaza, vulnerabilidad y riesgo por movimientos en masa del Municipio de Vélez, Santander.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Infraestructura corredor Puerta Norte — Calle 71" data-html="proyectos/proyecto11.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/11.jpg" alt="Corredor Puerta Norte" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🚛</div>
+        </div>
+        <div class="fcard-back">
+          <p>Diseño de la infraestructura prioritaria para el tránsito de vehículos de carga y pasajeros sobre el corredor Puerta Norte – Calle 71.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Parque contemplativo de Piedecuesta — Santander" data-html="proyectos/proyecto12.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/12.jpg" alt="Parque Piedecuesta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🌳</div>
+        </div>
+        <div class="fcard-back">
+          <p>Elaboración de estudios y diseños arquitectónicos, urbanísticos y de ingeniería para la construcción del parque contemplativo de Piedecuesta, Santander.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Plan de Desarrollo Municipal — Barrancabermeja Ciudad Futuro 2012-2015" data-html="proyectos/proyecto13.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/13.jpg" alt="Barrancabermeja Ciudad Futuro" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🏙️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Proyectos estratégicos y programáticos del Plan de Desarrollo Municipal — Barrancabermeja Ciudad Futuro 2012-2015.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Macroproyecto Pienta — Guatiguará Piedecuesta" data-html="proyectos/proyecto15.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/15.jpg" alt="Macroproyecto Pienta" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">🏘️</div>
+        </div>
+        <div class="fcard-back">
+          <p>Ajuste a los componentes ambiental y geotécnico del macroproyecto de interés social del valle de Guatiguará Piedecuesta, 'Pienta'.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="fcard" data-title="Elaboración y publicación — Planes maestro de movilidad urbana" data-html="proyectos/proyecto68.html">
+      <div class="fcard-inner">
+        <div class="fcard-front">
+          <img src="images/portfolio/proyectos_5.jpg" alt="Planes movilidad" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
+          <div class="fcard-ph">📄</div>
+        </div>
+        <div class="fcard-back">
+          <p>Elaboración, edición, diagramación y publicación de los documentos resumen de los planes maestro de movilidad urbana.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ALIADOS -->
+<section class="aliados" id="aliados">
+  <div class="stag"><span>Alianzas</span></div>
+  <h2 class="sh1">Entidades con las que <em>hemos trabajado</em></h2>
+  <div class="aliados-grid">
+    <div class="ally">Ministerio de Transporte</div>
+    <div class="ally">Municipio de Bucaramanga</div>
+    <div class="ally">CDMB</div>
+    <div class="ally">ACOFI</div>
+    <div class="ally">Área Metropolitana de Bucaramanga</div>
+    <div class="ally">Corpocesar</div>
+    <div class="ally">Corpoguajira</div>
+    <div class="ally">Departamento de Casanare</div>
+    <div class="ally">Departamento de Santander</div>
+    <div class="ally">Ecogás / TGI</div>
+    <div class="ally">FNGRD</div>
+    <div class="ally">Metrolínea S.A.</div>
+    <div class="ally">Municipio de Aguazul</div>
+    <div class="ally">Municipio de Barrancabermeja</div>
+    <div class="ally">Municipio de Piedecuesta</div>
+    <div class="ally">Municipio de Sabana de Torres</div>
+    <div class="ally">Municipio de Socorro</div>
+    <div class="ally">Municipio de Vélez</div>
+  </div>
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+  <div class="stag"><span>Contacto</span></div>
+  <h2 class="sh1">Hablemos de tu <em>próximo proyecto</em></h2>
+  <div class="contact-grid">
+    <div class="contact-info">
+      <div class="cinfo-item">
+        <div class="cinfo-ico"><i class="fa fa-map-marker-alt"></i></div>
+        <div>
+          <div class="cinfo-label">Ubicación</div>
+          <div class="cinfo-val">Bucaramanga, Colombia<br>Universidad Industrial de Santander</div>
+        </div>
+      </div>
+      <div class="cinfo-item">
+        <div class="cinfo-ico"><i class="fa fa-phone"></i></div>
+        <div>
+          <div class="cinfo-label">Teléfono</div>
+          <div class="cinfo-val">607 634 4000 ext. 2495</div>
+        </div>
+      </div>
+      <div class="cinfo-item">
+        <div class="cinfo-ico"><i class="fa fa-envelope"></i></div>
+        <div>
+          <div class="cinfo-label">Correo electrónico</div>
+          <div class="cinfo-val">
+            <a href="/cdn-cgi/l/email-protection#91f6f4fefcf0e5f8f2f0d1e4f8e2bff4f5e4bff2fe"><span class="__cf_email__" data-cfemail="a6c1c3c9cbc7d2cfc5c7e6d3cfd588c3c2d388c5c9">[email&#160;protected]</span></a><br>
+            <a href="/cdn-cgi/l/email-protection#5f383a30323e2b363c3e712f2d30261f2a362c713a3b2a713c30"><span class="__cf_email__" data-cfemail="86e1e3e9ebe7f2efe5e7a8f6f4e9ffc6f3eff5a8e3e2f3a8e5e9">[email&#160;protected]</span></a>
+          </div>
+        </div>
+      </div>
+      <div class="cinfo-item">
+        <div class="cinfo-ico"><i class="fa fa-share-alt"></i></div>
+        <div>
+          <div class="cinfo-label">Redes sociales</div>
+          <div class="social-row">
+            <a class="social-btn" href="https://x.com/GeomaticaUIS" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+            <a class="social-btn" href="https://www.instagram.com/geomaticauis/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a class="social-btn" href="https://www.youtube.com/channel/UCLf7fBC1LOQZbbrlob6tUow" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="map-wrap">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7917.856280694521!2d-73.1219268255956!3d7.134308575189676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x65adfdb5be1bea3a!2sUIS+Universidad+Industrial+de+Santander!5e0!3m2!1ses!2sco!4v1544050603592" allowfullscreen loading="lazy"></iframe>
+       </div>
+  </div>
+</section>
+
+<!-- MODAL CONSULTORÍA -->
+<div class="proj-modal-overlay" id="projModal">
+  <div class="proj-modal">
+    <div class="proj-modal-header">
+      <h3 class="proj-modal-title" id="projModalTitle"></h3>
+      <button class="proj-modal-close" id="projModalClose" aria-label="Cerrar">✕</button>
+    </div>
+    <div class="proj-modal-body">
+      <iframe id="projModalIframe" src="" allowfullscreen></iframe>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2025 Geomática UIS — Todos los derechos reservados.</p>
+  <a href="https://scienti.minciencias.gov.co/gruplac/jsp/visualiza/visualizagr.jsp?nro=00000000003022" target="_blank">GrupLac ↗</a>
+</footer>
+
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  // Swiper
+  new Swiper('.swiper', {
+    loop: true,
+    autoplay: { delay: 4500, disableOnInteraction: false },
+    pagination: { el: '.swiper-pagination', clickable: true },
+    navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    effect: 'fade',
+    fadeEffect: { crossFade: true },
+    speed: 800,
+  });
+
+  // Hamburger
+  const hamburger = document.getElementById('hamburger');
+  const mobileMenu = document.getElementById('mobileMenu');
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('open');
+    mobileMenu.classList.toggle('open');
+  });
+  function closeMobile() {
+    hamburger.classList.remove('open');
+    mobileMenu.classList.remove('open');
+  }
+
+  // Modal Consultorías
+  const modal       = document.getElementById('projModal');
+  const modalTitle  = document.getElementById('projModalTitle');
+  const modalIframe = document.getElementById('projModalIframe');
+  const modalClose  = document.getElementById('projModalClose');
+
+  document.querySelectorAll('.fcard[data-html]').forEach(card => {
+    card.addEventListener('click', () => {
+      const title = card.getAttribute('data-title');
+      const html  = card.getAttribute('data-html');
+      modalTitle.textContent = title;
+      modalIframe.src = html;
+      modal.classList.add('open');
+      document.body.style.overflow = 'hidden';
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove('open');
+    modalIframe.src = '';
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
 </body>
-
 </html>
