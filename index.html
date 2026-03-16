@@ -823,4 +823,18 @@
       modalIframe.src = html;
       modal.classList.add('open');
       document.body.style.overflow = 'hidden';
-      })}); 
+    });
+  });
+
+  function closeModal() {
+    modal.classList.remove('open');
+    modalIframe.src = '';
+    document.body.style.overflow = '';
+  }
+
+  modalClose.addEventListener('click', closeModal);
+  modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+</script>
+</body>
+</html>
