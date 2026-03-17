@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // SWIPER
   const swiperElement = document.querySelector('.swiper');
-  if (swiperElement) {
+  if (swiperElement && typeof Swiper !== 'undefined') {
     new Swiper('.swiper', {
       loop: true,
       autoplay: {
