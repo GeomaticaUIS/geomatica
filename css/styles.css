@@ -261,6 +261,7 @@ section { padding: 88px 7%; }
 .proyectos .sh1 em { color: #5cb8f0; }
 .proyectos .stag span { color: #4aaee8; }
 .proyectos .stag::before { background: #4aaee8; }
+.proyectos-intro { color: var(--crema); font-size: 15px; line-height: 1.75; margin-top: 16px; }
 .proj-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px,1fr)); gap: 16px; margin-top: 48px; }
 .pcard {
   border-radius: 12px; overflow: hidden;
@@ -281,6 +282,7 @@ section { padding: 88px 7%; }
 
 /* ALIADOS */
 .aliados { background: var(--blanco); }
+.aliados-intro { font-size: 15px; line-height: 1.75; color: var(--gris); margin-top: 16px; }
 .aliados-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 48px; }
 .ally {
   background: var(--crema); border: 1px solid var(--gris-claro);
