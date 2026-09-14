@@ -1,0 +1,48 @@
+h1 {
+    font-size: 2rem;
+    text-align: center
+}
+
+h2 {
+    font-size: 1.8rem;
+}
+
+h3 {
+    font-size: 1.4rem;
+}
+
+h1, h2 {
+    color: green;
+}
+
+p {
+    text-align: justify;
+}
+
+.side-nav li a:not(.button) {
+    color: green;
+}
+
+.anchor {
+  display: block;
+  height: 45px; /*same height as header*/
+  margin-top: -45px; /*same height as header*/
+  visibility: hidden;
+}
+
+.side-nav {
+    margin-top: 51px;
+}
+
+.groups-logos .panel {
+    border-style: none;
+}
+
+.groups-logos p {
+    text-align: center;
+    font-size: 0.6rem;
+}
+
+.photos-quest p {
+    text-align: center;
+}
